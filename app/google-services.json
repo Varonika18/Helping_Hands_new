@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "82717938240",
+    "project_id": "varonika103",
+    "storage_bucket": "varonika103.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82717938240:android:034f4c729087e1dc1f85a5",
+        "android_client_info": {
+          "package_name": "com.example.aahaarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82717938240-pneke6qog3hmd7vv9l8p5d6gugscl4ai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZTLa1zYFaFMXSgKyKIbpaV6Ajxf8yuXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82717938240-pneke6qog3hmd7vv9l8p5d6gugscl4ai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

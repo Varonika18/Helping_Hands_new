@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AAHAARAPP" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#070707</item>
+        <item name="colorPrimaryDark">#070707</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>
