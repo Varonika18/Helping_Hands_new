@@ -14,13 +14,14 @@ public class About extends AppCompatActivity {
 
     CardView instagram,facebook;
 
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
-      instagram = findViewById(R.id.instagram);
+        instagram = findViewById(R.id.instagram);
         facebook = findViewById(R.id.facebook);
 
         instagram.setOnClickListener(new View.OnClickListener ()
@@ -41,6 +42,7 @@ public class About extends AppCompatActivity {
                 startActivity(myWebLink);
             }
         });
+
 
     }
 

@@ -24,7 +24,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Contact extends AppCompatActivity {
+public class Suggestion extends AppCompatActivity {
     EditText name, email, message;
     Button submit;
     boolean isNameValid, isEmailValid, isMessageValid;
@@ -36,7 +36,7 @@ public class Contact extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contact);
+        setContentView(R.layout.activity_suggestion);
         name = (EditText) findViewById(R.id.name);
         email = (EditText) findViewById(R.id.email);
         message = (EditText) findViewById(R.id.message);
@@ -110,7 +110,7 @@ public class Contact extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(),"Success!",Toast.LENGTH_SHORT).show();
                                 Log.d(TAG,"Successfully! We will shortly revert you back.");
                                 //startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                                Intent intent = new Intent(Contact.this, MainActivity.class);
+                                Intent intent = new Intent(Suggestion.this, MainActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(intent);
                             }

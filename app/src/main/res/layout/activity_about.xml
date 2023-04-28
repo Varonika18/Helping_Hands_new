@@ -21,15 +21,6 @@
             android:textColor="@color/white"
             android:layout_margin="20dp"/>
 
-<!--            <ImageView-->
-<!--                android:layout_width="200dp"-->
-<!--                android:layout_height="200dp"-->
-<!--                android:layout_gravity="center_horizontal"-->
-<!--                android:layout_marginTop="18dp"-->
-<!--                android:layout_marginBottom="28dp"-->
-<!--                android:src="@drawable/splash"-->
-<!--                tools:ignore="ContentDescription" />-->
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -41,11 +32,51 @@
             android:textColor="@color/white"
             android:textSize="20sp" />
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:fontFamily="@font/opensans"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/nunitosans_light"
+            android:justificationMode="inter_word"
+            android:text="Email: helpinghands@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/nunitosans_light"
+            android:justificationMode="inter_word"
+            android:text="Contact number: 9541775561"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
         <androidx.cardview.widget.CardView
             android:id="@+id/instagram"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_margin="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="5dp"
             android:clickable="true"
             app:cardBackgroundColor="@color/gray"
             app:cardCornerRadius="12dp"
@@ -76,7 +107,12 @@
             android:id="@+id/facebook"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_margin="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="35dp"
             android:clickable="true"
             app:cardBackgroundColor="@color/gray"
             app:cardCornerRadius="12dp"
@@ -103,6 +139,8 @@
 
 
         </androidx.cardview.widget.CardView>
+
+
 
 
 

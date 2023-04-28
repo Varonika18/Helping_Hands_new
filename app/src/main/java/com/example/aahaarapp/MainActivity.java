@@ -3,10 +3,8 @@ package com.example.aahaarapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 
 import androidx.annotation.NonNull;
@@ -86,8 +84,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), About.class);
                 startActivity(intent);
                 return true;
-            case R.id.contactus:
-                intent = new Intent(getApplicationContext(), Contact.class);
+
+            case R.id.suggestion:
+                intent = new Intent(getApplicationContext(), Suggestion.class);
                 startActivity(intent);
                 return true;
             case R.id.pin:

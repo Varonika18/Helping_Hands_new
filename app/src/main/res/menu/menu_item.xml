@@ -5,10 +5,12 @@
     tools:context=".MainActivity">
 
     <item android:id="@+id/about"
-        android:title="About"/>
+        android:title="About/Contact Us"/>
 
-    <item android:id="@+id/contactus"
-        android:title="Contact Us"/>
+
+
+    <item android:id="@+id/suggestion"
+        android:title="Suggestion"/>
 
     <item android:id="@+id/pin"
         android:title="Location"/>

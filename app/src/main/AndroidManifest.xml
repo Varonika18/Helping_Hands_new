@@ -28,7 +28,7 @@
             android:value="AIzaSyBtAubRGSlTZanGLTPT3JrKWsRCFAXZzrE" />
 
         <activity android:name="com.example.aahaarapp.Receive" />
-        <activity android:name="com.example.aahaarapp.Contact" />
+        <activity android:name="com.example.aahaarapp.Suggestion" />
         <activity android:name="com.example.aahaarapp.Signup" />
         <activity android:name="com.example.aahaarapp.Logup" />
         <activity android:name="com.example.aahaarapp.MainActivity" />
