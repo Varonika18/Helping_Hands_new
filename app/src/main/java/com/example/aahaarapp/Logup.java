@@ -38,7 +38,7 @@ public class Logup extends AppCompatActivity {
         fAuth=FirebaseAuth.getInstance();
 
         if(fAuth.getCurrentUser() !=null){
-            Intent intent = new Intent(Logup.this, MainActivity.class);
+            Intent intent = new Intent(Logup.this,Donate.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }
@@ -73,7 +73,7 @@ public class Logup extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(Logup.this, "Logged in Successfully.", Toast.LENGTH_SHORT) .show();
-                            Intent intent = new Intent(Logup.this, MainActivity.class);
+                            Intent intent = new Intent(Logup.this, Donate.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
                         }else{

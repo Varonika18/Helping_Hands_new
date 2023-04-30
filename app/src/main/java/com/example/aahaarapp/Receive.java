@@ -148,7 +148,7 @@ public class Receive extends AppCompatActivity implements OnMapReadyCallback, Go
                                 Toast.makeText(getApplicationContext(),"Success!",Toast.LENGTH_SHORT).show();
                                 Log.d(TAG,"Success!");
                                 //startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                                Intent intent = new Intent(Receive.this, MainActivity.class);
+                                Intent intent = new Intent(Receive.this,MainActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(intent);
                             }

@@ -51,7 +51,7 @@ public class Signup extends AppCompatActivity {
         if(fAuth.getCurrentUser() !=null){
             //startActivity(new Intent(getApplicationContext(),MainActivity.class));
             //finish();
-            Intent intent = new Intent(Signup.this, MainActivity.class);
+            Intent intent = new Intent(Signup.this, Donate.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }
@@ -103,7 +103,7 @@ public class Signup extends AppCompatActivity {
                                 }
                             });
                             //startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                            Intent intent = new Intent(Signup.this, MainActivity.class);
+                            Intent intent = new Intent(Signup.this, Donate.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
                         }

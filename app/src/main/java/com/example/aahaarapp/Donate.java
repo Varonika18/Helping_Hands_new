@@ -3,15 +3,19 @@ package com.example.aahaarapp;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
-
+import androidx.appcompat.widget.Toolbar;
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,6 +33,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
@@ -53,11 +58,37 @@ public class Donate extends AppCompatActivity implements OnMapReadyCallback, Goo
     FirebaseFirestore fStore;
     String userID;
     public static final String TAG = "TAG";
-
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donate);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_Navigation);
+
+        // Set Home selected
+        bottomNavigationView.setSelectedItemId(R.id.donate);
+        bottomNavigationView.setOnNavigationItemSelectedListener(
+                new BottomNavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        switch(item.getItemId())
+                        {
+                            case R.id.receive:
+                                startActivity(new Intent(getApplicationContext(),Receive.class));
+                                overridePendingTransition(0,0);
+                                return true;
+                            case R.id.donate:
+                                return true;
+                            case R.id.payment:
+
+                                return true;
+                        }
+                        return false;
+                    }
+                }
+        );
         mFullName = findViewById(R.id.donorname);
         mFoodItem = findViewById(R.id.fooditem);
         mPhone = findViewById(R.id.phone);
@@ -205,4 +236,46 @@ public class Donate extends AppCompatActivity implements OnMapReadyCallback, Goo
             }
         }
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_item, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        switch (id){
+            case R.id.about:
+                Intent intent = new Intent(getApplicationContext(), About.class);
+                startActivity(intent);
+                return true;
+
+            case R.id.suggestion:
+                intent = new Intent(getApplicationContext(), Suggestion.class);
+                startActivity(intent);
+                return true;
+            case R.id.pin:
+                intent = new Intent(getApplicationContext(),MyPin.class);
+                startActivity(intent);
+                return true;
+            case R.id.available:
+                intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
+                intent = new Intent(getApplicationContext(), landingpage.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+    }
 }
+

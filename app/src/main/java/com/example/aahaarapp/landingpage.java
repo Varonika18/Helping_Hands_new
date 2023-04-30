@@ -24,7 +24,7 @@ public class landingpage extends AppCompatActivity {
 
         fAuth= FirebaseAuth.getInstance();
         if(fAuth.getCurrentUser() !=null){
-            Intent intent = new Intent(landingpage.this, MainActivity.class);
+            Intent intent = new Intent(landingpage.this, Donate.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }
