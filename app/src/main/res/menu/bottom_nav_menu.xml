@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/donate"
+            android:title="Donate"
+            android:icon="@drawable/donate"/>
+        <item
+            android:id="@+id/receive"
+            android:title="Receive"
+            android:icon="@drawable/rcv"/>
+        <item
+            android:id="@+id/payment"
+            android:title="Payment"
+            android:icon="@drawable/baseline_payment_24"/>
+
+</menu>

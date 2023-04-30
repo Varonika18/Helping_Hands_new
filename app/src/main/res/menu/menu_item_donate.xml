@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Donate">
+
+    <item android:id="@+id/about"
+        android:title="About/Contact Us"/>
+
+
+
+    <item android:id="@+id/suggestion"
+        android:title="Suggestion"/>
+
+    <item android:id="@+id/pin"
+        android:title="Location"/>
+   <item android:id="@+id/available"
+       android:title="Available Things"/>
+
+    <item android:id="@+id/logout"
+        android:title="Logout"/>
+</menu>
