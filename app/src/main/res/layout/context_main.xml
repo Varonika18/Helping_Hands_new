@@ -39,7 +39,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/available"
+            android:id="@+id/generateQR"
             android:layout_width="390dp"
             android:layout_height="165dp"
             android:layout_margin="30dp"
@@ -53,7 +53,26 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/opensans"
-                android:text="Available"
+                android:text="Generate QR"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/payment"
+            android:layout_width="390dp"
+            android:layout_height="165dp"
+            android:layout_margin="30dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/gray"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/opensans"
+                android:text="Payment"
                 android:textColor="@color/white"
                 android:textSize="18dp" />
         </androidx.cardview.widget.CardView>

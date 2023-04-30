@@ -10,6 +10,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -18,24 +20,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AAHAARAPP"
         tools:ignore="AllowBackup">
-        <activity android:name="com.example.aahaarapp.UserdataActivity"></activity>
-        <activity android:name="com.example.aahaarapp.History" />
-        <activity android:name="com.example.aahaarapp.MyPin" />
-        <activity android:name="com.example.aahaarapp.About" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity android:name=".UserdataActivity" />
+        <activity android:name=".History" />
+        <activity android:name=".MyPin" />
+        <activity android:name=".About" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBtAubRGSlTZanGLTPT3JrKWsRCFAXZzrE" />
 
-        <activity android:name="com.example.aahaarapp.Receive" />
-        <activity android:name="com.example.aahaarapp.Suggestion" />
-        <activity android:name="com.example.aahaarapp.Signup" />
-        <activity android:name="com.example.aahaarapp.Logup" />
-        <activity android:name="com.example.aahaarapp.MainActivity" />
-        <activity android:name="com.example.aahaarapp.Donate" />
-        <activity android:name="com.example.aahaarapp.landingpage" />
+        <activity android:name=".Receive" />
+        <activity android:name=".Suggestion" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Logup" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Donate" />
+        <activity android:name=".landingpage" />
         <activity
-            android:name="com.example.aahaarapp.SplashScreen"
+            android:name=".SplashScreen"
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

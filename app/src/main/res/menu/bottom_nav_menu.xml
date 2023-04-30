@@ -9,9 +9,6 @@
             android:id="@+id/receive"
             android:title="Receive"
             android:icon="@drawable/rcv"/>
-        <item
-            android:id="@+id/payment"
-            android:title="Payment"
-            android:icon="@drawable/baseline_payment_24"/>
+
 
 </menu>

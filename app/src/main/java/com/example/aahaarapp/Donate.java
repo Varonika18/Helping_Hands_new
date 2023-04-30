@@ -81,9 +81,7 @@ public class Donate extends AppCompatActivity implements OnMapReadyCallback, Goo
                                 return true;
                             case R.id.donate:
                                 return true;
-                            case R.id.payment:
 
-                                return true;
                         }
                         return false;
                     }

@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
 
 
-    CardView history;
+    CardView history,generateQR;
     FirebaseAuth fAuth;
 
     @Override
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         history = findViewById(R.id.cardHistory);
 
 
+        generateQR = findViewById(R.id.generateQR);
         fAuth= FirebaseAuth.getInstance();
         if(fAuth.getCurrentUser() ==null){
             Intent intent = new Intent(MainActivity.this, landingpage.class);
@@ -47,7 +48,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+       generateQR.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(getApplicationContext(),MainActivity2.class);
+               startActivity(intent);
+           }
+       });
 
     }
 }
