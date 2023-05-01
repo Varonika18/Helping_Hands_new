@@ -16,7 +16,7 @@
         android:title="Location"/>
 
     <item android:id="@+id/available"
-        android:title="Available Things"/>
+        android:title="Dashboard"/>
 
     <item android:id="@+id/logout"
         android:title="Logout"/>

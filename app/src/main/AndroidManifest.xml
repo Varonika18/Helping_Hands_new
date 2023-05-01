@@ -21,6 +21,9 @@
         android:theme="@style/Theme.AAHAARAPP"
         tools:ignore="AllowBackup">
         <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
             android:exported="false" />
         <activity android:name=".UserdataActivity" />
@@ -48,6 +51,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
